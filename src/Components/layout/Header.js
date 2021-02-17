@@ -67,9 +67,26 @@ const SearchBarWrapper = styled.div`
   width: 100%;
   max-width: 750px;
   display: grid;
-  grid-template-column: 10% auto 7%;
+  grid-template-columns: 10% auto 7%;
   place-items: center;
   height: 45px;
   border-radius: 6px;
+  .MuiSvgIcon-root {
+    color: #5f6368;
+  }
+  input {
+    width: 100%;
+    height: 30px;
+    background: none;
+    border: none;
+    font-size: 18px;
+
+    :focus {
+      outline: none;
+    }
+  }
 `;
-const IconsWrapper = styled.div``;
+const IconsWrapper = styled.div`
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+`;
