@@ -88,5 +88,9 @@ const SearchBarWrapper = styled.div`
 `;
 const IconsWrapper = styled.div`
   display: grid;
+  margin-left: 8px;
   grid-template-columns: repeat(4, auto);
+  .MuiSvgIcon-root {
+    color: #5f6368;
+  }
 `;
